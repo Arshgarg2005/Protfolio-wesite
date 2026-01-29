@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md border-b" style={{ backgroundColor: 'rgba(15, 23, 42, 0.8)', borderColor: 'rgba(255, 255, 255, 0.05)' }}>
+    <nav className="sticky top-0 z-50 backdrop-blur-md border-b" style={{ backgroundColor: 'rgba(16, 20, 30, 0.9)', borderColor: 'rgba(255, 255, 255, 0.06)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12">
           <Link to="/" className="text-base font-bold transition-colors" style={{ color: '#f1f5f9' }}>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     : 'hover:opacity-80'
                 }`}
                 style={{
-                  backgroundColor: location.pathname === item.path ? 'rgba(255, 255, 255, 0.06)' : 'transparent',
+                  backgroundColor: location.pathname === item.path ? 'rgba(21, 29, 40, 0.8)' : 'transparent',
                   color: location.pathname === item.path ? '#f1f5f9' : '#64748b',
                 }}
               >

@@ -31,7 +31,7 @@ const Projects = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="min-h-screen"
-      style={{ backgroundColor: '#0f172a' }}
+      style={{ backgroundColor: '#0c1018' }}
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.h1
@@ -53,17 +53,23 @@ const Projects = () => {
           {/* Malicious PDF Detector */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)',
+              backgroundColor: '#151d28',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             }}
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold" style={{ color: '#f1f5f9' }}>Malicious PDF Detector</h2>
+              <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>Malicious PDF Detector</h2>
               <a 
                 href="https://github.com/Arshgarg2005/Malacious_PDF_Detector" 
-                className="transition-colors text-sm font-medium"
+                className="transition-colors text-xs font-medium"
                 style={{ color: '#94a3b8' }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +77,7 @@ const Projects = () => {
                 GitHub →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+            <p className="mb-3 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
               Built an end-to-end machine learning pipeline to detect malicious PDF files using structural features. Applied LDA for dimensionality reduction and trained a Random Forest classifier, achieving 92% accuracy and a 0.93 F1-score on benchmark datasets. Developed a web interface for real-time PDF classification.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
@@ -95,17 +101,23 @@ const Projects = () => {
           {/* Election Voting System */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)',
+              backgroundColor: '#151d28',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             }}
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold" style={{ color: '#f1f5f9' }}>Election Voting System</h2>
+              <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>Election Voting System</h2>
               <a 
                 href="https://github.com/Arshgarg2005/Election_voting_system" 
-                className="transition-colors text-sm font-medium"
+                className="transition-colors text-xs font-medium"
                 style={{ color: '#94a3b8' }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,7 +125,7 @@ const Projects = () => {
                 GitHub →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+            <p className="mb-3 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
               Designed and implemented a secure, database-backed voting system using SQL. Ensured data integrity for voters, candidates, and election results through efficient schema design and optimized queries.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -126,25 +138,31 @@ const Projects = () => {
           {/* Register and Login System */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)',
+              backgroundColor: '#151d28',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             }}
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold" style={{ color: '#f1f5f9' }}>Food App</h2>
+              <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>Food App</h2>
               <a 
                 href="https://arshgarg-foodapp.vercel.app/" 
-                className="transition-colors text-sm font-medium"
+                className="transition-colors text-xs font-medium"
                 style={{ color: '#94a3b8' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Try it here →
+                Live Demo →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+            <p className="mb-3 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
               Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend and Node.js backend for scalable performance.
             </p>
             <div className="flex flex-wrap gap-2">

@@ -44,7 +44,7 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="min-h-screen"
-      style={{ backgroundColor: '#0f172a' }}
+      style={{ backgroundColor: '#0c1018' }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
@@ -169,7 +169,7 @@ const Home = () => {
             variants={itemVariants}
             className="rounded-xl p-5 transition-all duration-200"
             style={{
-              backgroundColor: '#1e293b',
+              backgroundColor: '#151d28',
               border: '1px solid rgba(255, 255, 255, 0.08)',
             }}
             onMouseEnter={(e) => {
@@ -210,7 +210,7 @@ const Home = () => {
               to="/projects"
               className="block group relative rounded-lg p-4 transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#151d28',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
               }}
               onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.25)'}
@@ -241,7 +241,7 @@ const Home = () => {
               to="/experience"
               className="block group relative rounded-lg p-4 transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#151d28',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
               }}
               onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.25)'}
@@ -270,7 +270,7 @@ const Home = () => {
               to="/research"
               className="block group relative rounded-lg p-4 transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#151d28',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
               }}
               onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.25)'}
@@ -300,7 +300,7 @@ const Home = () => {
               to="/leadership"
               className="block group relative rounded-lg p-4 transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#151d28',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
               }}
               onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.25)'}
@@ -327,7 +327,7 @@ const Home = () => {
             variants={cardVariants}
             className="lg:col-span-3 relative rounded-lg p-4 transition-all duration-200"
             style={{
-              backgroundColor: '#1e293b',
+              backgroundColor: '#151d28',
               border: '1px solid rgba(255, 255, 255, 0.08)',
             }}
             onMouseEnter={(e) => {
@@ -405,7 +405,7 @@ const Home = () => {
             variants={cardVariants}
             className="md:col-span-2 relative rounded-lg p-4"
             style={{
-              backgroundColor: '#1e293b',
+              backgroundColor: '#151d28',
               border: '1px solid rgba(255, 255, 255, 0.08)',
             }}
           >
@@ -449,7 +449,7 @@ const Home = () => {
             variants={itemVariants}
             className="rounded-xl p-6 text-center"
             style={{
-              backgroundColor: '#1e293b',
+              backgroundColor: '#151d28',
               border: '1px solid rgba(255, 255, 255, 0.08)',
             }}
           >

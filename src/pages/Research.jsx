@@ -31,7 +31,7 @@ const Research = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="min-h-screen"
-      style={{ backgroundColor: '#0f172a' }}
+      style={{ backgroundColor: '#0c1018' }}
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.h1
@@ -53,14 +53,20 @@ const Research = () => {
           {/* CVPR Publication */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)',
+              backgroundColor: '#151d28',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             }}
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold" style={{ color: '#f1f5f9' }}>CVPR 2025 Workshop Publication</h2>
+              <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>CVPR 2025 Workshop Publication</h2>
               <a
                 href="https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Li_NTIRE_2025_Challenge_on_Day_and_Night_Raindrop_Removal_for_CVPRW_2025_paper.html"
                 target="_blank"
@@ -71,10 +77,10 @@ const Research = () => {
                 Published
               </a>
             </div>
-            <h3 className="text-xl font-semibold mb-3" style={{ color: '#f1f5f9' }}>
+            <h3 className="text-sm font-semibold mb-2" style={{ color: '#f1f5f9' }}>
               NTIRE 2025 Challenge on Day and Night Raindrop Removal for Dual-Focused Images: Methods and Results
             </h3>
-            <p className="mb-4" style={{ color: '#94a3b8' }}>
+            <p className="mb-3 text-xs" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
               Published in the CVPR 2025 Workshop, part of the IEEE/CVF conference on Computer Vision and Pattern Recognition (CVPR 2025).
             </p>
             <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
@@ -88,14 +94,20 @@ const Research = () => {
           {/* VSIP Recognition */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)',
+              backgroundColor: '#151d28',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             }}
           >
-            <h2 className="text-2xl font-bold mb-4" style={{ color: '#f1f5f9' }}>VSIP Team Recognition</h2>
-            <p className="mb-2" style={{ color: '#94a3b8' }}>
+            <h2 className="text-base font-bold mb-3" style={{ color: '#f1f5f9' }}>VSIP Team Recognition</h2>
+            <p className="mb-2 text-xs" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
               Formally recognized as a valued member for innovative contribution to the project "Designing of the Generalizable Vision Transformers" with officially commended technical acumen.
             </p>
             <a
