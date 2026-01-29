@@ -71,8 +71,8 @@ const Projects = () => {
                 GitHub →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#94a3b8' }}>
-              Built an ML pipeline to classify PDFs as malicious or benign using structural features.
+            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+              Built an end-to-end machine learning pipeline to detect malicious PDF files using structural features. Applied LDA for dimensionality reduction and trained a Random Forest classifier, achieving 92% accuracy and a 0.93 F1-score on benchmark datasets. Developed a web interface for real-time PDF classification.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-3 py-1 text-xs rounded-full font-medium" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#94a3b8' }}>Machine Learning</span>
@@ -113,8 +113,8 @@ const Projects = () => {
                 GitHub →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#94a3b8' }}>
-              Designed and implemented a secure database-backed voting system using SQL. Ensured data integrity for candidates, voters, and results with efficient schema design and query optimization.
+            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+              Designed and implemented a secure, database-backed voting system using SQL. Ensured data integrity for voters, candidates, and election results through efficient schema design and optimized queries.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-xs rounded-full font-medium" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#94a3b8' }}>SQL</span>
@@ -144,8 +144,8 @@ const Projects = () => {
                 Try it here →
               </a>
             </div>
-            <p className="mb-4" style={{ color: '#94a3b8' }}>
-              A React-based application offering a seamless food ordering experience with features like user authen- tication, dynamic cart management, and secure payment processing
+            <p className="mb-4" style={{ color: '#cbd5e1' }}>
+              Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend and Node.js backend for scalable performance.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-xs rounded-full font-medium" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#94a3b8' }}>React</span>

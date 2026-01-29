@@ -5,6 +5,7 @@ import AnimatedBackground from './components/AnimatedBackground';
 import Home from './pages/Home';
 import Research from './pages/Research';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import Leadership from './pages/Leadership';
 
 function AnimatedRoutes() {
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/research" element={<Research />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/leadership" element={<Leadership />} />
       </Routes>
     </AnimatePresence>
