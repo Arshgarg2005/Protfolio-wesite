@@ -40,22 +40,16 @@ const Leadership = () => {
         className="min-h-screen"
         style={{ backgroundColor: '#0c1018' }}
       >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Page Header */}
-        <motion.div
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.h1
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="mb-8"
+          className="text-4xl font-bold mb-8"
+          style={{ color: '#f1f5f9' }}
         >
-          <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-lg font-bold tracking-tight" style={{ color: '#f1f5f9' }}>
-              Leadership
-            </h1>
-            <div style={{ height: '0.5rem', width: '2.5rem', backgroundColor: '#3b82f6' }}></div>
-          </div>
-          <p className="text-xs" style={{ color: '#94a3b8' }}>Coordination and team contributions</p>
-        </motion.div>
+          Leadership
+        </motion.h1>
 
         <motion.div
           variants={containerVariants}
@@ -65,16 +59,17 @@ const Leadership = () => {
           {/* Single Unified Card */}
           <motion.div
             variants={itemVariants}
-            whileHover={{ y: -2 }}
-            transition={{ duration: 0.2 }}
-            className="rounded-lg p-4"
+            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
             style={{
               backgroundColor: '#151d28',
               border: '1px solid rgba(255, 255, 255, 0.08)',
-              transition: 'border-color 0.2s',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.25)'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)'}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+            }}
           >
             {/* VSIP Coordinator Header with Active Badge */}
             <div className="flex items-start justify-between mb-3">
@@ -128,7 +123,7 @@ const Leadership = () => {
                 
               {/* VSIP Technical Contribution Certificate */}
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1LNjAH7_9yTXGi2NOHNJNgjT6W0KMN-qu/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block group"
@@ -143,10 +138,10 @@ const Leadership = () => {
                 >
                   <div className="flex-1">
                     <h3 className="text-sm font-semibold mb-1" style={{ color: '#f1f5f9' }}>
-                      VSIP Technical Contribution Certificate
+                      Academic Event Coordination
                     </h3>
                     <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.4' }}>
-                      Vision Science and Image Processing (VSIP) Group · 2024
+                      Visual and Signal Information Processing (VSIP) Group · 2025
                     </p>
                   </div>
                   <div className="flex-shrink-0 transition-all duration-200 group-hover:opacity-100" style={{ opacity: 0.4 }}>
@@ -159,7 +154,7 @@ const Leadership = () => {
 
               {/* VSIP Coordinator Appointment Letter */}
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1t5l-jrJvaBEO1-B9tc28fzZg9tLuAzLv/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block group"
@@ -174,10 +169,10 @@ const Leadership = () => {
                 >
                   <div className="flex-1">
                     <h3 className="text-sm font-semibold mb-1" style={{ color: '#f1f5f9' }}>
-                      VSIP Coordinator Appointment Letter
+                      VSIP Certificate of Appreciation
                     </h3>
                     <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.4' }}>
-                      VSIP Program Committee · 2024
+                      VSIP Program Committee · 2025
                     </p>
                   </div>
                   <div className="flex-shrink-0 transition-all duration-200 group-hover:opacity-100" style={{ opacity: 0.4 }}>

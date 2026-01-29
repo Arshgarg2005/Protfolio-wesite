@@ -163,7 +163,7 @@ const Projects = () => {
               </a>
             </div>
             <p className="mb-3 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
-              Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend and Node.js backend for scalable performance.
+              Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend for scalable performance.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-xs rounded-full font-medium" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#94a3b8' }}>React</span>

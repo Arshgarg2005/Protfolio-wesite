@@ -85,7 +85,7 @@ const Experience = () => {
             <div className="space-y-2 mt-3 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
               <p>• Designed and implemented a weak-attention preserving activation mechanism for Transformer-based vision tasks.</p>
               <p>• Achieved state-of-the-art image restoration performance with a peak PSNR of 25.46 and an SSIM of 0.841.</p>
-              <p>• Co-authored a research paper accepted at the CVPR 2025 Workshop (NTIRE Challenge).</p>
+              <p>• Co-authored a research paper submitted at a reputed venue.</p>
               <p>• Conducted extensive experiments to evaluate architectural and loss-function variations.</p>
             </div>
             <div className="flex flex-wrap gap-2 mt-4">
