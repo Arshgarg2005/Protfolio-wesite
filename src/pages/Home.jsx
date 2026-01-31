@@ -346,7 +346,7 @@ const Home = () => {
               <div>
                 <h3 className="font-semibold mb-1 text-xs uppercase tracking-wide" style={{ color: '#94a3b8' }}>Languages</h3>
                 <div className="flex flex-wrap gap-1">
-                  {['C', 'C++', 'Python', 'SQL', 'JavaScript', 'HTML', 'CSS'].map(skill => (
+                  {['C', 'C++', 'Python', 'SQL', 'React.js', 'HTML', 'CSS'].map(skill => (
                     <span key={skill} className="px-1.5 py-0.5 text-xs rounded" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)', color: '#cbd5e1' }}>{skill}</span>
                   ))}
                 </div>
@@ -373,7 +373,7 @@ const Home = () => {
               <div>
                 <h3 className="font-semibold mb-1 text-xs uppercase tracking-wide" style={{ color: '#94a3b8' }}>ML & DL</h3>
                 <div className="flex flex-wrap gap-1">
-                  {['Machine Learning', 'Deep Learning', 'Vision Transformers', 'Image Restoration'].map(skill => (
+                  {['Machine Learning', 'Deep Learning', 'Transformers', 'Image Restoration'].map(skill => (
                     <span key={skill} className="px-1.5 py-0.5 text-xs rounded" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)', color: '#cbd5e1' }}>{skill}</span>
                   ))}
                 </div>
@@ -382,7 +382,7 @@ const Home = () => {
               <div>
                 <h3 className="font-semibold mb-1 text-xs uppercase tracking-wide" style={{ color: '#94a3b8' }}>Libraries</h3>
                 <div className="flex flex-wrap gap-1">
-                  {['NumPy', 'Pandas', 'OpenCV', 'Matplotlib'].map(skill => (
+                  {['NumPy', 'Pandas', 'OpenCV', 'Matplotlib', 'Tensorflow'].map(skill => (
                     <span key={skill} className="px-1.5 py-0.5 text-xs rounded" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)', color: '#cbd5e1' }}>{skill}</span>
                   ))}
                 </div>
