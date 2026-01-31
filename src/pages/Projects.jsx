@@ -146,7 +146,7 @@ const Projects = () => {
                 <div className="flex items-center gap-2">
                   <div className="relative group">
                     <span 
-                      className="px-2 py-0.5 text-xs rounded font-medium cursor-help" 
+                      className="px-2 py-0.5 text-xs rounded font-medium" 
                       style={{ 
                         backgroundColor: project.status === 'Completed' ? 'rgba(16, 185, 129, 0.12)' : 'rgba(251, 146, 60, 0.12)', 
                         color: project.status === 'Completed' ? '#10b981' : '#fb923c', 
