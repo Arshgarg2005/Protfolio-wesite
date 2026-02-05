@@ -25,28 +25,20 @@ const Leadership = () => {
   };
 
   return (
-    <>
-      <style>{`
-        .cert-card:hover {
-          border-color: rgba(148, 163, 184, 0.3) !important;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-      `}</style>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-        className="min-h-screen"
-        style={{ backgroundColor: '#0c1018' }}
-      >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className="min-h-screen"
+      style={{ backgroundColor: '#0c1018' }}
+    >
+      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1100px' }}>
         <motion.h1
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="text-4xl font-bold mb-8"
-          style={{ color: '#f1f5f9' }}
+          style={{ color: '#f1f5f9', marginBottom: 'var(--space-8)', fontSize: '2.5rem', lineHeight: '1.2', letterSpacing: '0.015em', fontWeight: '600' }}
         >
           Leadership
         </motion.h1>
@@ -55,55 +47,64 @@ const Leadership = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
+          className="grid grid-cols-1"
+          style={{ gap: 'var(--space-6)' }}
         >
           {/* Single Unified Card */}
           <motion.div
             variants={itemVariants}
-            className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
+            className="rounded-xl backdrop-blur-md transition-all duration-300 flex flex-col"
             style={{
-              backgroundColor: '#151d28',
+              background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
               border: '1px solid rgba(255, 255, 255, 0.08)',
+              minHeight: 'fit-content',
+              padding: 'var(--card-padding)',
+              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
             }}
           >
             {/* VSIP Coordinator Header with Active Badge */}
-            <div className="flex items-start justify-between mb-3">
-              <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>VSIP Coordinator</h2>
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded" style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
+            <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)' }}>
+              <h2 className="leading-tight" style={{ color: '#f1f5f9', fontSize: '1.375rem', letterSpacing: '0.005em', fontWeight: '600' }}>VSIP Coordinator</h2>
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg flex-shrink-0" style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981' }}></div>
                 <span className="text-xs font-semibold" style={{ color: '#10b981' }}>Active</span>
               </div>
             </div>
 
-            <p className="mb-4 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
+            <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
               Coordinated project activities and contributed to the VSIP (Visual and Signal Information Processing) group, focusing on Vision Transformer-based research and computer vision systems.
             </p>
 
-            <div className="rounded p-2.5 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)' }}>
-              <p className="text-xs font-semibold mb-1" style={{ color: '#f1f5f9' }}>Recognition:</p>
-              <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.4' }}>
+            <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+              <p className="text-sm" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--space-1)' }}>Recognition</p>
+              <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300' }}>
                 Formally recognized for innovative technical contributions and effective project coordination.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-1.5 mb-6">
-              <span className="px-2 py-0.5 text-xs rounded font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#3b82f6', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Project Coordination</span>
-              <span className="px-2 py-0.5 text-xs rounded font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#3b82f6', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Vision Transformers</span>
-              <span className="px-2 py-0.5 text-xs rounded font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#3b82f6', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Research</span>
+            <div className="flex flex-wrap" style={{ gap: 'var(--tag-gap)', marginBottom: 'var(--space-6)' }}>
+              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Project Coordination</span>
+              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Vision Transformers</span>
+              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Research</span>
             </div>
 
             {/* Divider */}
             <div className="my-5" style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.08)' }}></div>
 
             {/* Impact Section */}
-            <div className="mb-6">
-              <h3 className="text-sm font-bold mb-2" style={{ color: '#f1f5f9' }}>Impact</h3>
-              <div className="space-y-1.5 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
+            <div style={{ marginBottom: 'var(--space-6)' }}>
+              <h3 className="text-base leading-tight" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--space-3)' }}>Impact</h3>
+              <div className="space-y-2 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300' }}>
                 <p>
                   Focused on bridging academic research with practical implementation through coordination, mentorship, and technical collaboration.
                 </p>
@@ -118,7 +119,7 @@ const Leadership = () => {
 
             {/* Certifications & Recognition */}
             <div>
-              <h3 className="text-sm font-bold mb-3" style={{ color: '#f1f5f9' }}>Certifications & Recognition</h3>
+              <h3 className="text-base font-bold mb-4 leading-tight" style={{ color: '#f1f5f9' }}>Certifications & Recognition</h3>
               <div className="space-y-3">
                 
               {/* VSIP Technical Contribution Certificate */}
@@ -130,17 +131,16 @@ const Leadership = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <div 
-                  className="cert-card flex items-start justify-between gap-3 p-3 rounded transition-all duration-200"
+                  className="cert-card flex items-start justify-between gap-4 p-4 rounded-lg transition-all duration-300"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   }}
                 >
                   <div className="flex-1">
-                    <h3 className="text-sm font-semibold mb-1" style={{ color: '#f1f5f9' }}>
+                    <h3 className="text-sm font-semibold mb-1.5 leading-snug" style={{ color: '#f1f5f9' }}>
                       Academic Event Coordination
                     </h3>
-                    <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.4' }}>
+                    <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
                       Visual and Signal Information Processing (VSIP) Group · 2025
                     </p>
                   </div>
@@ -161,17 +161,16 @@ const Leadership = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <div 
-                  className="cert-card flex items-start justify-between gap-3 p-3 rounded transition-all duration-200"
+                  className="cert-card flex items-start justify-between gap-4 p-4 rounded-lg transition-all duration-300"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   }}
                 >
                   <div className="flex-1">
-                    <h3 className="text-sm font-semibold mb-1" style={{ color: '#f1f5f9' }}>
+                    <h3 className="text-sm font-semibold mb-1.5 leading-snug" style={{ color: '#f1f5f9' }}>
                       VSIP Certificate of Appreciation
                     </h3>
-                    <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.4' }}>
+                    <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
                       VSIP Program Committee · 2025
                     </p>
                   </div>
@@ -188,7 +187,6 @@ const Leadership = () => {
         </motion.div>
       </div>
     </motion.div>
-    </>
   );
 };
 

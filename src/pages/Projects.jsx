@@ -84,13 +84,12 @@ const Projects = () => {
       className="min-h-screen"
       style={{ backgroundColor: '#0c1018' }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1100px' }}>
         <motion.h1
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="text-4xl font-bold mb-8"
-          style={{ color: '#f1f5f9' }}
+          style={{ color: '#f1f5f9', marginBottom: 'var(--space-8)', fontSize: '2.5rem', lineHeight: '1.2', letterSpacing: '0.015em', fontWeight: '600' }}
         >
           Projects
         </motion.h1>
@@ -100,17 +99,30 @@ const Projects = () => {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="flex gap-2 mb-6"
+          className="flex"
+          style={{ gap: 'var(--tag-gap)', marginBottom: 'var(--space-6)' }}
         >
           {['All', 'Completed', 'Ongoing'].map((filterOption) => (
             <button
               key={filterOption}
               onClick={() => setFilter(filterOption)}
-              className="px-4 py-1.5 text-xs rounded-lg font-medium transition-all duration-200"
+              className="px-5 py-2 text-sm rounded-lg font-medium transition-all duration-200"
               style={{
-                backgroundColor: filter === filterOption ? '#151d28' : 'transparent',
-                color: filter === filterOption ? '#f1f5f9' : '#94a3b8',
-                border: filter === filterOption ? '1px solid rgba(255, 255, 255, 0.12)' : '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: filter === filterOption ? 'rgba(59, 130, 246, 0.12)' : 'rgba(255, 255, 255, 0.04)',
+                color: filter === filterOption ? '#7dd3fc' : '#94a3b8',
+                border: filter === filterOption ? '1px solid rgba(59, 130, 246, 0.3)' : '1px solid rgba(255, 255, 255, 0.08)',
+              }}
+              onMouseEnter={(e) => {
+                if (filter !== filterOption) {
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.08)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (filter !== filterOption) {
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.04)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                }
               }}
             >
               {filterOption}
@@ -123,27 +135,35 @@ const Projects = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="space-y-6"
+          className="grid grid-cols-1"
+          style={{ gap: 'var(--space-6)' }}
         >
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="rounded-2xl p-6 backdrop-blur-md transition-all duration-200"
+              className="rounded-xl backdrop-blur-md transition-all duration-300 flex flex-col"
               style={{
-                backgroundColor: '#151d28',
+                background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
+                minHeight: 'fit-content',
+                padding: 'var(--card-padding)',
+                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
               }}
             >
-              <div className="flex items-start justify-between mb-2">
-                <h2 className="text-base font-bold" style={{ color: '#f1f5f9' }}>{project.title}</h2>
-                <div className="flex items-center gap-2">
+              <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)', gap: 'var(--space-4)' }}>
+                <h2 className="leading-tight flex-1" style={{ color: '#f1f5f9', fontSize: '1.375rem', letterSpacing: '0.005em', fontWeight: '600' }}>{project.title}</h2>
+                <div className="flex items-center gap-2 flex-shrink-0">
                   <div className="relative group">
                     <span 
                       className="px-2 py-0.5 text-xs rounded font-medium" 
@@ -157,7 +177,7 @@ const Projects = () => {
                     </span>
                     <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs rounded-lg whitespace-nowrap opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none z-10"
                       style={{
-                        backgroundColor: '#151d28',
+                        background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.98) 0%, rgba(15, 23, 42, 1) 100%)',
                         color: '#cbd5e1',
                         border: '1px solid rgba(255, 255, 255, 0.12)',
                         boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3)'
@@ -171,7 +191,7 @@ const Projects = () => {
                         style={{
                           borderLeft: '4px solid transparent',
                           borderRight: '4px solid transparent',
-                          borderTop: '4px solid #151d28',
+                          borderTop: '4px solid rgba(15, 23, 42, 1)',
                         }}
                       />
                     </div>
@@ -187,22 +207,20 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <p className="mb-4 mt-2 text-xs" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
+              <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', maxWidth: '48rem', marginBottom: 'var(--space-4)' }}>
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap mt-auto" style={{ gap: 'var(--tag-gap)', marginBottom: 'var(--space-4)' }}>
                 {project.techStack.map((tech, index) => (
-                  <span key={index} className="px-3 py-1 text-xs rounded-full font-medium" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#94a3b8' }}>
+                  <span key={index} className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>
                     {tech}
                   </span>
                 ))}
               </div>
               {project.results && (
-                <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-                  <p className="text-sm mb-2" style={{ color: '#94a3b8' }}>
-                    <span className="font-semibold" style={{ color: '#f1f5f9' }}>Results:</span>
-                  </p>
-                  <ul className="text-sm space-y-1" style={{ color: '#94a3b8' }}>
+                <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)', marginTop: 'var(--tag-gap)' }}>
+                  <p className="text-sm" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>Results</p>
+                  <ul className="text-sm space-y-1.5" style={{ color: '#cbd5e1', lineHeight: '1.5' }}>
                     {project.results.map((result, index) => (
                       <li key={index}>{result}</li>
                     ))}
