@@ -72,55 +72,64 @@ const Leadership = () => {
               e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
             }}
           >
-            {/* VSIP Coordinator Header with Active Badge */}
-            <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)' }}>
-              <h2 className="leading-tight" style={{ color: '#f1f5f9', fontSize: '1.375rem', letterSpacing: '0.005em', fontWeight: '600' }}>VSIP Coordinator</h2>
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg flex-shrink-0" style={{ backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
-                <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981' }}></div>
-                <span className="text-xs font-semibold" style={{ color: '#10b981' }}>Active</span>
+            {/* Role Section */}
+            <div style={{ marginBottom: 'var(--space-5)', paddingBottom: 'var(--space-5)', borderBottom: '1px solid rgba(255, 255, 255, 0.06)' }}>
+              <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)', gap: 'var(--space-4)' }}>
+                <h2 className="leading-tight" style={{ color: '#f8fafc', fontSize: '1.5rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>VSIP Coordinator</h2>
+                <div className="flex items-center px-3 py-1.5 rounded-md flex-shrink-0" style={{ backgroundColor: 'rgba(16, 185, 129, 0.15)', border: '1px solid rgba(16, 185, 129, 0.35)', gap: '0.5rem' }}>
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#34d399', boxShadow: '0 0 6px rgba(52, 211, 153, 0.5)' }}></div>
+                  <span className="text-xs font-semibold uppercase" style={{ color: '#34d399', letterSpacing: '0.05em' }}>Active</span>
+                </div>
               </div>
-            </div>
 
-            <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
-              Coordinated project activities and contributed to the VSIP (Visual and Signal Information Processing) group, focusing on Vision Transformer-based research and computer vision systems.
-            </p>
-
-            <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
-              <p className="text-sm" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--space-1)' }}>Recognition</p>
-              <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300' }}>
-                Formally recognized for innovative technical contributions and effective project coordination.
+              <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.7', fontWeight: '400', maxWidth: '42rem' }}>
+                Coordinated project activities and contributed to the VSIP (Visual and Signal Information Processing) group, focusing on Vision Transformer-based research and computer vision systems.
               </p>
             </div>
 
-            <div className="flex flex-wrap" style={{ gap: 'var(--tag-gap)', marginBottom: 'var(--space-6)' }}>
-              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Project Coordination</span>
-              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Vision Transformers</span>
-              <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Research</span>
-            </div>
-
-            {/* Divider */}
-            <div className="my-5" style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.08)' }}></div>
-
-            {/* Impact Section */}
-            <div style={{ marginBottom: 'var(--space-6)' }}>
-              <h3 className="text-base leading-tight" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--space-3)' }}>Impact</h3>
-              <div className="space-y-2 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300' }}>
-                <p>
-                  Focused on bridging academic research with practical implementation through coordination, mentorship, and technical collaboration.
-                </p>
-                <p>
-                  Contributed to advancing Vision Transformer–based research while supporting peer learning and project execution.
+            {/* Recognition Section */}
+            <div style={{ marginBottom: 'var(--space-5)' }}>
+              <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Recognition</h3>
+              <div className="rounded-lg" style={{ backgroundColor: 'rgba(125, 211, 252, 0.04)', border: '1px solid rgba(125, 211, 252, 0.15)', padding: 'var(--space-4)', borderLeft: '3px solid #7dd3fc' }}>
+                <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.6', fontWeight: '400' }}>
+                  Formally recognized for <span style={{ fontWeight: '600', color: '#f8fafc' }}>innovative technical contributions</span> and <span style={{ fontWeight: '600', color: '#f8fafc' }}>effective project coordination</span> in advancing Vision Transformer research.
                 </p>
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="my-5" style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.08)' }}></div>
+            {/* Areas of Focus */}
+            <div style={{ marginBottom: 'var(--space-6)' }}>
+              <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Areas of Focus</h3>
+              <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Project Coordination</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Vision Transformers</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Research</span>
+              </div>
+            </div>
+
+            {/* Impact Section */}
+            <div style={{ marginBottom: 'var(--space-6)', paddingBottom: 'var(--space-6)', borderBottom: '1px solid rgba(255, 255, 255, 0.06)' }}>
+              <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-4)' }}>Leadership Impact</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+                <div className="flex items-start" style={{ gap: 'var(--space-3)' }}>
+                  <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#7dd3fc', marginTop: '0.5rem', flexShrink: 0 }}></div>
+                  <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.7', fontWeight: '400', flex: 1 }}>
+                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Bridged academic research with practical implementation</span> through coordination, mentorship, and technical collaboration.
+                  </p>
+                </div>
+                <div className="flex items-start" style={{ gap: 'var(--space-3)' }}>
+                  <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#7dd3fc', marginTop: '0.5rem', flexShrink: 0 }}></div>
+                  <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.7', fontWeight: '400', flex: 1 }}>
+                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Advanced Vision Transformer-based research</span> while supporting peer learning and project execution.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Certifications & Recognition */}
             <div>
-              <h3 className="text-base font-bold mb-4 leading-tight" style={{ color: '#f1f5f9' }}>Certifications & Recognition</h3>
-              <div className="space-y-3">
+              <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-4)' }}>Certifications & Recognition</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
                 
               {/* VSIP Technical Contribution Certificate */}
               <a
@@ -131,24 +140,36 @@ const Leadership = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <div 
-                  className="cert-card flex items-start justify-between gap-4 p-4 rounded-lg transition-all duration-300"
+                  className="cert-card flex items-start justify-between transition-all duration-300"
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    borderRadius: '0.5rem',
+                    padding: 'var(--space-4)',
+                    gap: 'var(--space-3)'
                   }}
                 >
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold mb-1.5 leading-snug" style={{ color: '#f1f5f9' }}>
-                      Academic Event Coordination
-                    </h3>
-                    <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
-                      Visual and Signal Information Processing (VSIP) Group · 2025
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 transition-all duration-200 group-hover:opacity-100" style={{ opacity: 0.4 }}>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" style={{ color: '#3b82f6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <div className="flex items-start" style={{ gap: 'var(--space-3)', flex: 1 }}>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0, marginTop: '2px' }}>
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style={{ stroke: '#7dd3fc' }}/>
+                      <polyline points="14,2 14,8 20,8" style={{ stroke: '#7dd3fc' }}/>
+                      <line x1="16" y1="13" x2="8" y2="13" style={{ stroke: '#7dd3fc' }}/>
+                      <line x1="16" y1="17" x2="8" y2="17" style={{ stroke: '#7dd3fc' }}/>
+                      <polyline points="10,9 9,9 8,9" style={{ stroke: '#7dd3fc' }}/>
                     </svg>
+                    <div className="flex-1">
+                      <h4 className="text-sm" style={{ color: '#f8fafc', fontWeight: '600', lineHeight: '1.4', marginBottom: '0.25rem' }}>
+                        Academic Event Coordination
+                      </h4>
+                      <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.5', fontWeight: '400' }}>
+                        Visual and Signal Information Processing (VSIP) Group · 2025
+                      </p>
+                    </div>
                   </div>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="transition-all duration-200 group-hover:translate-x-1" style={{ color: '#7dd3fc', flexShrink: 0, opacity: 0.5 }}>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
                 </div>
               </a>
 
@@ -161,24 +182,36 @@ const Leadership = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <div 
-                  className="cert-card flex items-start justify-between gap-4 p-4 rounded-lg transition-all duration-300"
+                  className="cert-card flex items-start justify-between transition-all duration-300"
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    borderRadius: '0.5rem',
+                    padding: 'var(--space-4)',
+                    gap: 'var(--space-3)'
                   }}
                 >
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold mb-1.5 leading-snug" style={{ color: '#f1f5f9' }}>
-                      VSIP Certificate of Appreciation
-                    </h3>
-                    <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.5' }}>
-                      VSIP Program Committee · 2025
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 transition-all duration-200 group-hover:opacity-100" style={{ opacity: 0.4 }}>
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" style={{ color: '#3b82f6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <div className="flex items-start" style={{ gap: 'var(--space-3)', flex: 1 }}>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0, marginTop: '2px' }}>
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style={{ stroke: '#7dd3fc' }}/>
+                      <polyline points="14,2 14,8 20,8" style={{ stroke: '#7dd3fc' }}/>
+                      <line x1="16" y1="13" x2="8" y2="13" style={{ stroke: '#7dd3fc' }}/>
+                      <line x1="16" y1="17" x2="8" y2="17" style={{ stroke: '#7dd3fc' }}/>
+                      <polyline points="10,9 9,9 8,9" style={{ stroke: '#7dd3fc' }}/>
                     </svg>
+                    <div className="flex-1">
+                      <h4 className="text-sm" style={{ color: '#f8fafc', fontWeight: '600', lineHeight: '1.4', marginBottom: '0.25rem' }}>
+                        VSIP Certificate of Appreciation
+                      </h4>
+                      <p className="text-xs" style={{ color: '#94a3b8', lineHeight: '1.5', fontWeight: '400' }}>
+                        VSIP Program Committee · 2025
+                      </p>
+                    </div>
                   </div>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="transition-all duration-200 group-hover:translate-x-1" style={{ color: '#7dd3fc', flexShrink: 0, opacity: 0.5 }}>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
                 </div>
               </a>
               </div>

@@ -46,7 +46,7 @@ const Home = () => {
       className="min-h-screen"
       style={{ backgroundColor: '#0c1018' }}
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1200px' }}>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1100px' }}>
         {/* Hero Section */}
         <motion.div
           variants={containerVariants}
@@ -275,11 +275,11 @@ const Home = () => {
               <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 End-to-end deep learning and machine learning pipelines, relational database systems, and full-stack web applications with a focus on scalability and clean architecture.
               </p>
-              <div className="flex flex-wrap mt-auto" style={{ gap: 'var(--tag-gap)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Machine Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>Deep Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>SQL</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>React</span>
+              <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Machine Learning</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Deep Learning</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>SQL</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>React</span>
               </div>
             </Link>
           </motion.div>
@@ -317,9 +317,9 @@ const Home = () => {
               <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 Research internships at premier institutions, working on Vision Transformer architectures and deep learning systems.
               </p>
-              <div className="flex flex-wrap mt-auto" style={{ gap: 'var(--tag-gap)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>IIT Bhubaneswar</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>IIT Jodhpur</span>
+              <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>IIT Bhubaneswar</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>IIT Jodhpur</span>
               </div>
             </Link>
           </motion.div>
@@ -398,8 +398,8 @@ const Home = () => {
               <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 Leadership roles in VSIP, contributing to coordination and technical initiatives.
               </p>
-              <div className="flex flex-wrap mt-auto" style={{ gap: 'var(--tag-gap)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.12)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.25)' }}>VSIP</span>
+              <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>VSIP</span>
               </div>
             </Link>
           </motion.div>
