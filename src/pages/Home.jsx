@@ -44,21 +44,46 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="min-h-screen"
-      style={{ backgroundColor: '#0c1018' }}
+      style={{ 
+        backgroundColor: '#0d1117',
+        backgroundImage: `
+          radial-gradient(ellipse 100% 60% at 50% -10%, rgba(20, 28, 40, 0.4) 0%, transparent 50%),
+          radial-gradient(circle at 80% 50%, rgba(15, 23, 35, 0.3) 0%, transparent 40%),
+          url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E")
+        `,
+        position: 'relative'
+      }}
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1100px' }}>
-        {/* Hero Section */}
+      <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'var(--page-padding-y)', paddingBottom: 'var(--page-padding-y)', maxWidth: '1100px', position: 'relative', zIndex: 1 }}>
+        {/* Hero Section - Immersive */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          style={{ marginBottom: 'var(--section-spacing)' }}
+          style={{ 
+            marginBottom: 'calc(var(--section-spacing) * 0.6)',
+            padding: 'clamp(2rem, 5vw, 3.5rem) 0',
+            position: 'relative'
+          }}
         >
+          {/* Soft inner glow effect */}
+          <div style={{
+            position: 'absolute',
+            top: '-20%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '90%',
+            height: '120%',
+            background: 'radial-gradient(ellipse 60% 40% at 50% 30%, rgba(59, 130, 246, 0.12) 0%, transparent 60%)',
+            pointerEvents: 'none',
+            zIndex: -1
+          }} />
+          
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center" style={{ gap: 'var(--space-8)' }}>
             {/* Left Column - Content */}
             <div className="lg:col-span-7 order-2 lg:order-1 max-w-xl">
               <motion.div variants={itemVariants}>
-                <h1 className="text-2xl md:text-3xl lg:text-[2.5rem]" style={{ color: '#f1f5f9', lineHeight: '1.15', fontWeight: '700', letterSpacing: '-0.025em', marginBottom: 'var(--space-6)' }}>
+                <h1 className="text-2xl md:text-3xl lg:text-[2.5rem]" style={{ color: '#e2e8f0', lineHeight: '1.2', fontWeight: '700', letterSpacing: '-0.025em', marginBottom: 'var(--space-6)' }}>
                   Computer Engineering Undergraduate<br />
                   Aspiring Software Engineer with ML Experience
                 </h1>
@@ -67,7 +92,7 @@ const Home = () => {
               <motion.p
                 variants={itemVariants}
                 className="text-base md:text-lg"
-                style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '400', maxWidth: '38rem', marginBottom: 'var(--space-10)' }}
+                style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '400', maxWidth: '36rem', marginBottom: 'var(--space-10)' }}
               >
                 My work focuses on building scalable ML pipelines and Transformer-based deep learning models. I am actively seeking internship opportunities in software engineering roles.
               </motion.p>
@@ -80,14 +105,14 @@ const Home = () => {
                 <a
                   href="https://drive.google.com/file/d/1C5_ldePWbIWwgqkfDcCqReU6G4a6rFvY/view?usp=sharing"
                   download
-                  className="px-6 py-2.5 rounded-lg font-medium text-sm transition-all"
+                  className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
                   style={{
                     background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
                     color: '#ffffff',
                     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(59, 130, 246, 0.4), 0 0 20px rgba(59, 130, 246, 0.15)';
+                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(59, 130, 246, 0.3)';
                     e.currentTarget.style.transform = 'translateY(-1px)';
                   }}
                   onMouseLeave={(e) => {
@@ -99,20 +124,20 @@ const Home = () => {
                 </a>
                 <Link
                   to="/projects"
-                  className="px-6 py-2.5 rounded-lg font-medium text-sm transition-all"
+                  className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
                     color: '#e2e8f0',
-                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    border: '1px solid rgba(255, 255, 255, 0.08)',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.08)';
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
                     e.currentTarget.style.transform = 'translateY(-1px)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.06)';
-                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                 >
@@ -123,7 +148,7 @@ const Home = () => {
               <motion.div
                 variants={itemVariants}
                 className="flex flex-wrap border-t"
-                style={{ gap: 'var(--space-4)', paddingTop: 'var(--space-4)', borderColor: 'rgba(255, 255, 255, 0.1)' }}
+                style={{ gap: 'var(--space-4)', paddingTop: 'var(--space-4)', borderColor: 'rgba(255, 255, 255, 0.06)' }}
               >
                 <a href="https://github.com/Arshgarg2005" target="_blank" rel="noopener noreferrer" className="transition-colors font-medium hover:opacity-80 flex items-center" style={{ color: '#94a3b8', gap: '0.5rem' }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -155,33 +180,39 @@ const Home = () => {
                 variants={itemVariants}
                 className="relative"
               >
+                {/* Soft radial backdrop - integrated into hero */}
+                <div 
+                  className="absolute inset-0 rounded-full"
+                  style={{
+                    background: 'radial-gradient(circle at center, rgba(30, 41, 59, 0.6) 0%, rgba(59, 130, 246, 0.08) 40%, transparent 70%)',
+                    filter: 'blur(40px)',
+                    transform: 'scale(1.4)',
+                    zIndex: -1
+                  }}
+                />
+                
                 <div className="relative w-72 h-72 md:w-[21.5rem] md:h-[21.5rem]">
-                  {/* Blue accent ring */}
+                  {/* Subtle inner gradient overlay on image */}
                   <div 
                     className="absolute inset-0 rounded-full"
                     style={{
-                      background: 'linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%)',
-                      padding: '4px',
-                    }}
-                  >
-                    <div className="w-full h-full rounded-full overflow-hidden" style={{ backgroundColor: '#0f172a' }}>
-                      <img 
-                        src="/profile.jpg" 
-                        alt="Arsh Garg - Portfolio" 
-                        className="w-full h-full object-cover"
-                        style={{ backgroundColor: 'rgba(30, 41, 59, 0.5)' }}
-                      />
-                    </div>
-                  </div>
-                  {/* Soft shadow */}
-                  <div 
-                    className="absolute inset-0 rounded-full -z-10"
-                    style={{
-                      background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%)',
-                      filter: 'blur(20px)',
-                      transform: 'scale(1.1)',
+                      background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.06) 0%, transparent 50%)',
+                      pointerEvents: 'none',
+                      zIndex: 2
                     }}
                   />
+                  
+                  <div className="w-full h-full rounded-full overflow-hidden relative" style={{ 
+                    backgroundColor: '#0f172a',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)'
+                  }}>
+                    <img 
+                      src="/profile.jpg" 
+                      alt="Arsh Garg - Portfolio" 
+                      className="w-full h-full object-cover"
+                      style={{ backgroundColor: 'rgba(30, 41, 59, 0.5)' }}
+                    />
+                  </div>
                 </div>
               </motion.div>
             </div>
@@ -198,29 +229,30 @@ const Home = () => {
         >
           <motion.div
             variants={itemVariants}
-            className="rounded-xl transition-all duration-300"
+            className="rounded-lg transition-all duration-300"
             style={{
-              background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              background: 'rgba(25, 35, 48, 0.6)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.06)',
               padding: 'var(--card-padding)',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.transform = 'translateY(-1px)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+              e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
             }}
           >
             <div style={{ marginBottom: 'var(--space-6)' }}>
-              <h2 style={{ fontSize: '1.5rem', color: '#f1f5f9', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>About</h2>
-              <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+              <h2 style={{ fontSize: '1.5rem', color: '#e2e8f0', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>About</h2>
+              <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
             </div>
-            <div className="space-y-5 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', maxWidth: '46rem' }}>
+            <div className="space-y-5 text-sm" style={{ color: '#94a3b8', lineHeight: '1.85', fontWeight: '300', maxWidth: '42rem' }}>
               <p>
                 I am a Computer Engineering undergraduate with a strong foundation in full-stack development and applied machine learning. My work focuses on building scalable web systems and developing deep learning models for real-world computer vision problems.
               </p>
@@ -246,40 +278,41 @@ const Home = () => {
           <motion.div variants={cardVariants} className="md:col-span-3">
             <Link
               to="/projects"
-              className="block group relative rounded-xl transition-all duration-300 flex flex-col h-full"
+              className="block group relative rounded-lg transition-all duration-300 flex flex-col h-full"
               style={{
-                background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                background: 'rgba(25, 35, 48, 0.5)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 minHeight: '220px',
                 padding: 'var(--card-padding)',
-                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
               }}
             >
               <div style={{ marginBottom: 'var(--space-4)' }}>
                 <div className="flex items-center justify-between" style={{ marginBottom: 'var(--space-3)' }}>
-                  <h2 style={{ fontSize: '1.375rem', color: '#f1f5f9', letterSpacing: '0.01em', fontWeight: '600' }}>Projects</h2>
+                  <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.01em', fontWeight: '600' }}>Projects</h2>
                   <span className="text-xl transition-all duration-300 group-hover:translate-x-1" style={{ color: '#94a3b8' }}>→</span>
                 </div>
-                <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+                <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
-              <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
+              <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 End-to-end deep learning and machine learning pipelines, relational database systems, and full-stack web applications with a focus on scalability and clean architecture.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Machine Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Deep Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>SQL</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>React</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Machine Learning</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Deep Learning</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>SQL</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>React</span>
               </div>
             </Link>
           </motion.div>
@@ -288,38 +321,39 @@ const Home = () => {
           <motion.div variants={cardVariants} className="md:col-span-3">
             <Link
               to="/experience"
-              className="block group relative rounded-xl transition-all duration-300 flex flex-col h-full"
+              className="block group relative rounded-lg transition-all duration-300 flex flex-col h-full"
               style={{
-                background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                background: 'rgba(25, 35, 48, 0.5)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 minHeight: '220px',
                 padding: 'var(--card-padding)',
-                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
               }}
             >
               <div style={{ marginBottom: 'var(--space-4)' }}>
                 <div className="flex items-center justify-between" style={{ marginBottom: 'var(--space-3)' }}>
-                  <h2 style={{ fontSize: '1.375rem', color: '#f1f5f9', letterSpacing: '0.01em', fontWeight: '600' }}>Experience</h2>
+                  <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.01em', fontWeight: '600' }}>Experience</h2>
                   <span className="text-xl transition-all duration-300 group-hover:translate-x-1" style={{ color: '#94a3b8' }}>→</span>
                 </div>
-                <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+                <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
-              <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
+              <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 Research internships at premier institutions, working on Vision Transformer architectures and deep learning systems.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>IIT Bhubaneswar</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>IIT Jodhpur</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>IIT Bhubaneswar</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>IIT Jodhpur</span>
               </div>
             </Link>
           </motion.div>
@@ -328,36 +362,37 @@ const Home = () => {
           <motion.div variants={cardVariants} className="md:col-span-4">
             <Link
               to="/research"
-              className="block group relative rounded-xl transition-all duration-300 flex flex-col h-full"
+              className="block group relative rounded-lg transition-all duration-300 flex flex-col h-full"
               style={{
-                background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                background: 'rgba(25, 35, 48, 0.5)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 minHeight: '220px',
                 padding: 'var(--card-padding)',
-                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
               }}
             >
               <div style={{ marginBottom: 'var(--space-4)' }}>
-                <div className="flex items-center justify-between" style={{ marginBottom: 'var(--space-3)' }}>
-                  <h2 style={{ fontSize: '1.375rem', color: '#f1f5f9', letterSpacing: '0.01em', fontWeight: '600' }}>Research & Publications</h2>
+                <div className="flex items-center justify-between\" style={{ marginBottom: 'var(--space-3)' }}>
+                  <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.01em', fontWeight: '600' }}>Research & Publications</h2>
                   <span className="text-xl transition-all duration-300 group-hover:translate-x-1" style={{ color: '#94a3b8' }}>→</span>
                 </div>
-                <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+                <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
               <div className="flex-1">
                 <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)' }}>
-                  <h3 className="text-sm" style={{ color: '#f1f5f9', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>CVPR 2025 Workshop</h3>
-                  <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300' }}>
+                  <h3 className="text-sm" style={{ color: '#e2e8f0', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>CVPR 2025 Workshop</h3>
+                  <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300' }}>
                     Co-author of a paper published at the CVPR 2025 Workshop as part of the NTIRE Challenge on Day and Night Raindrop Removal. Contributed to the design and evaluation of Transformer-based image restoration models, achieving top-tier performance among international teams.
                   </p>
                 </div>
@@ -369,37 +404,38 @@ const Home = () => {
           <motion.div variants={cardVariants} className="md:col-span-2">
             <Link
               to="/leadership"
-              className="block group relative rounded-xl transition-all duration-300 flex flex-col h-full"
+              className="block group relative rounded-lg transition-all duration-300 flex flex-col h-full"
               style={{
-                background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                background: 'rgba(25, 35, 48, 0.5)',
+                backdropFilter: 'blur(12px)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 minHeight: '220px',
                 padding: 'var(--card-padding)',
-                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
               }}
             >
               <div style={{ marginBottom: 'var(--space-4)' }}>
                 <div className="flex items-center justify-between" style={{ marginBottom: 'var(--space-3)' }}>
-                  <h2 style={{ fontSize: '1.375rem', color: '#f1f5f9', letterSpacing: '0.01em', fontWeight: '600' }}>Leadership</h2>
+                  <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.01em', fontWeight: '600' }}>Leadership</h2>
                   <span className="text-xl transition-all duration-300 group-hover:translate-x-1" style={{ color: '#94a3b8' }}>→</span>
                 </div>
-                <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+                <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
-              <p className="text-sm flex-1" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
+              <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
                 Leadership roles in VSIP, contributing to coordination and technical initiatives.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>VSIP</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>VSIP</span>
               </div>
             </Link>
           </motion.div>
@@ -409,25 +445,26 @@ const Home = () => {
             variants={cardVariants}
             className="md:col-span-6 relative rounded-xl transition-all duration-300"
             style={{
-              background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              background: 'rgba(25, 35, 48, 0.5)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
               padding: 'var(--card-padding)',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05)',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.18)';
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05)';
             }}
           >
             <div style={{ marginBottom: 'var(--space-6)' }}>
-              <h2 style={{ fontSize: '1.5rem', color: '#f1f5f9', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Technical Skills</h2>
-              <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+              <h2 style={{ fontSize: '1.5rem', color: '#e2e8f0', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Technical Skills</h2>
+              <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" style={{ gap: 'var(--space-5)' }}>
@@ -698,27 +735,28 @@ const Home = () => {
             variants={cardVariants}
             className="md:col-span-6 relative rounded-xl transition-all duration-300"
             style={{
-              background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              background: 'rgba(25, 35, 48, 0.5)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
               padding: 'var(--card-padding)',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05)',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.18)';
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05)';
             }}
           >
             <div style={{ marginBottom: 'var(--space-5)' }}>
-              <h2 style={{ fontSize: '1.375rem', color: '#f1f5f9', letterSpacing: '0.005em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Achievements</h2>
-              <div className="h-0.5 w-12" style={{ backgroundColor: '#3b82f6' }} />
+              <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.005em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Achievements</h2>
+              <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
             </div>
-            <ul className="space-y-2 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', maxWidth: '46rem' }}>
+            <ul className="space-y-2 text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
                 <span>Selected among the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Top 32</span> teams out of <span style={{ color: '#3b82f6', fontWeight: '600' }}>361+</span> participants in the <span style={{ color: '#3b82f6', fontWeight: '600' }}>CVPR NTIRE 2025</span> Challenge.</span>
@@ -753,32 +791,33 @@ const Home = () => {
         >
           <motion.div
             variants={itemVariants}
-            className="rounded-xl text-center transition-all duration-300"
+            className="rounded-lg text-center transition-all duration-300"
             style={{
-              background: 'linear-gradient(135deg, rgba(21, 29, 40, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              background: 'rgba(25, 35, 48, 0.5)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.06)',
               padding: 'var(--card-padding)',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+              boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.transform = 'translateY(-1px)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.06)';
+              e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.15)';
             }}
           >
             <div style={{ marginBottom: 'var(--space-6)' }}>
-              <h2 style={{ fontSize: '1.5rem', color: '#f1f5f9', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Get In Touch</h2>
+              <h2 style={{ fontSize: '1.5rem', color: '#e2e8f0', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Get In Touch</h2>
               <div className="h-0.5 w-12 mx-auto" style={{ backgroundColor: '#3b82f6' }} />
             </div>
-            <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', marginBottom: 'var(--tag-gap)' }}>
+            <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--tag-gap)' }}>
               Interested in collaborating or discussing opportunities?
             </p>
-            <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.75', fontWeight: '300', maxWidth: '36rem', margin: '0 auto', marginBottom: 'var(--space-5)' }}>
+            <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', maxWidth: '34rem', margin: '0 auto', marginBottom: 'var(--space-5)' }}>
               Feel free to reach out via email or connect with me on LinkedIn and GitHub.
             </p>
             <div className="flex flex-wrap justify-center" style={{ gap: 'var(--space-3)' }}>
