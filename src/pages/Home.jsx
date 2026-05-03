@@ -103,8 +103,8 @@ const Home = () => {
                 style={{ gap: 'var(--space-3)', marginBottom: 'var(--space-8)' }}
               >
                 <a
-                  href="https://drive.google.com/file/d/1C5_ldePWbIWwgqkfDcCqReU6G4a6rFvY/view?usp=sharing"
-                  download
+                  href="https://drive.google.com/drive/u/1/folders/1TKTd-VkdR1Ug60374SrqBcZf_M0EFkjC"
+                  Resume
                   className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
                   style={{
                     background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
