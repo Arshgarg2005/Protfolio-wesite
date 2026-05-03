@@ -103,8 +103,9 @@ const Home = () => {
                 style={{ gap: 'var(--space-3)', marginBottom: 'var(--space-8)' }}
               >
                 <a
-                  href="https://drive.google.com/drive/u/1/folders/1TKTd-VkdR1Ug60374SrqBcZf_M0EFkjC"
-                  Resume
+                  href="https://drive.google.com/file/d/198x1gGHl7ydokUKvnoY1WoPoid9JGYU6/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
                   style={{
                     background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
@@ -120,7 +121,7 @@ const Home = () => {
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                 >
-                  Download Resume (PDF)
+                  Resume (PDF)
                 </a>
                 <Link
                   to="/projects"
