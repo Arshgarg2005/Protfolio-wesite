@@ -274,7 +274,7 @@ const Home = () => {
               <h2 style={{ fontSize: '1.5rem', color: '#e2e8f0', letterSpacing: '0.015em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>About</h2>
               <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
             </div>
-            <div className="space-y-5 text-sm" style={{ color: '#94a3b8', lineHeight: '1.85', fontWeight: '300', maxWidth: '42rem' }}>
+            <div className="space-y-5 text-sm" style={{ color: '#94a3b8', lineHeight: '1.85', fontWeight: '300', width: '100%', }}>
               <p>
                 I am a Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with a CGPA of 9.77. My interests lie at the intersection of Software Engineering, Artificial Intelligence, Machine Learning and scalable backend systems.
               </p>
