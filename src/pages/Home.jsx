@@ -780,9 +780,9 @@ const Home = () => {
           >
             <div style={{ marginBottom: 'var(--space-5)' }}>
               <h2 style={{ fontSize: '1.375rem', color: '#e2e8f0', letterSpacing: '0.005em', marginBottom: 'var(--space-3)', fontWeight: '600' }}>Achievements</h2>
-              <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
+              <div className="h-px w-full" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
             </div>
-            <ul className="space-y-2 text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>
+            <ul className="space-y-2 text-sm w-full" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
                 <span>Selected among the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Top 32</span> teams worldwide in the <span style={{ color: '#3b82f6', fontWeight: '600' }}>CVPR NTIRE 2025</span> Challenge from over <span style={{ color: '#3b82f6', fontWeight: '600' }}>361</span> participating teams.</span>

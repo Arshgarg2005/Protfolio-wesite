@@ -143,9 +143,11 @@ const Projects = () => {
               }}
             >
               {/* Project Header */}
-              <div style={{ marginBottom: 'var(--space-5)', paddingBottom: 'var(--space-4)', borderBottom: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)', gap: 'var(--space-4)' }}>
-                  <h2 className="leading-tight flex-1" style={{ color: '#f1f5f9', fontSize: '1.375rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>{project.title}</h2>
+              <div className="w-full" style={{ marginBottom: 'var(--space-5)', paddingBottom: 'var(--space-4)', borderBottom: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <div className="flex items-start justify-between w-full" style={{ marginBottom: 'var(--space-3)', gap: 'var(--space-4)' }}>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="leading-tight" style={{ color: '#f1f5f9', fontSize: '1.375rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>{project.title}</h2>
+                  </div>
                   <div className="flex items-center flex-shrink-0" style={{ gap: 'var(--space-3)' }}>
                     <div className="relative group">
                       <span 
