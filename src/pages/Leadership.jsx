@@ -83,7 +83,7 @@ const Leadership = () => {
               </div>
 
               <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.7', fontWeight: '400', maxWidth: '42rem' }}>
-                Coordinate technical events, organize workshops, mentor students and support collaborative research activities in Computer Vision, Machine Learning and Artificial Intelligence.
+                Coordinate technical events, organize workshops, mentor students and promote collaborative learning in Computer Vision, Machine Learning and Artificial Intelligence.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const Leadership = () => {
               <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Recognition</h3>
               <div className="rounded-lg" style={{ backgroundColor: 'rgba(125, 211, 252, 0.04)', border: '1px solid rgba(125, 211, 252, 0.15)', padding: 'var(--space-4)', borderLeft: '3px solid #7dd3fc' }}>
                 <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.6', fontWeight: '400' }}>
-                  Coordinate technical events, organize workshops, mentor students and support collaborative research activities in Computer Vision, Machine Learning and Artificial Intelligence.
+                  Coordinate technical events, organize workshops, mentor students and promote collaborative learning in Computer Vision, Machine Learning and Artificial Intelligence.
                 </p>
               </div>
             </div>

@@ -94,7 +94,7 @@ const Home = () => {
                 className="text-base md:text-lg"
                 style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '400', maxWidth: '36rem', marginBottom: 'var(--space-10)' }}
               >
-                Computer Engineering undergraduate passionate about Software Engineering, Artificial Intelligence, Machine Learning, Computer Vision and scalable backend systems. I enjoy building production-ready software, AI-powered applications and intelligent automation platforms while actively seeking Software Engineering internship opportunities.
+                Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with a strong foundation in software engineering, backend development, machine learning and computer vision. Passionate about building scalable software systems, AI-powered applications and production-ready backend architectures. Currently seeking Software Engineering internship opportunities.
               </motion.p>
 
               <motion.div
@@ -276,16 +276,13 @@ const Home = () => {
             </div>
             <div className="space-y-5 text-sm" style={{ color: '#94a3b8', lineHeight: '1.85', fontWeight: '300', maxWidth: '42rem' }}>
               <p>
-                I am a Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with a CGPA of 9.77 and strong interests in Software Engineering, Artificial Intelligence and scalable backend development.
+                I am a Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with a CGPA of 9.77. My interests lie at the intersection of Software Engineering, Artificial Intelligence, Machine Learning and scalable backend systems.
               </p>
               <p>
-                My work combines backend engineering, machine learning and computer vision research. I enjoy designing production-ready software systems, AI-powered automation platforms and intelligent applications that solve real-world problems.
+                I enjoy designing production-ready software using modern backend technologies while also applying machine learning and deep learning to real-world problems. My experience spans backend development, event-driven architectures, semantic retrieval systems, computer vision research and AI system design.
               </p>
               <p>
-                My experience includes software engineering internships at Codsai, IIT Bhubaneswar and IIT Jodhpur, where I worked on AI systems, transformer-based computer vision research and production-grade backend architectures.
-              </p>
-              <p>
-                I am currently seeking Software Engineering internships while continuing to build scalable software products and AI applications.
+                Through internships at Codsai, IIT Bhubaneswar and IIT Jodhpur, I have worked on large-scale software systems, transformer-based computer vision research and intelligent automation platforms. I am currently looking for Software Engineering internships where I can contribute to scalable products while continuing to expand my expertise in distributed systems and AI.
               </p>
             </div>
           </motion.div>
@@ -337,7 +334,10 @@ const Home = () => {
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Node.js</span>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>MongoDB</span>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>JWT</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Inngest</span>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Qdrant</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>RAG</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>React</span>
               </div>
             </Link>
           </motion.div>
@@ -419,7 +419,7 @@ const Home = () => {
                 <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)' }}>
                     <h3 className="text-sm" style={{ color: '#e2e8f0', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>NTIRE 2025 Challenge</h3>
                   <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300' }}>
-                      Co-author of the CVPR 2025 Workshop publication for the NTIRE Challenge on Day and Night Raindrop Removal. Contributed to transformer-based image restoration methods evaluated against international research teams.
+                      Co-author of the CVPR 2025 Workshop paper published as part of the NTIRE Challenge on Day and Night Raindrop Removal for Dual-Focused Images. Contributed to transformer-based image restoration research evaluated against international teams.
                   </p>
                 </div>
               </div>
@@ -458,7 +458,7 @@ const Home = () => {
                 <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
               <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
-                Coordinator for VSIP, supporting technical events, workshops, student mentoring and collaborative research activities.
+                Coordinate technical events, organize workshops, mentor students and promote collaborative learning in Computer Vision, Machine Learning and Artificial Intelligence.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>VSIP</span>
@@ -519,7 +519,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['C', 'C++', 'Python', 'SQL', 'React.js', 'HTML', 'CSS'].map(skill => (
+                  {['C++', 'Python', 'SQL'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -683,7 +683,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    Core Areas
+                    Libraries
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -691,7 +691,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['Software Engineering', 'Artificial Intelligence', 'Machine Learning', 'Computer Vision', 'Scalable Backend Development'].map(skill => (
+                  {['NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'NLTK', 'OpenCV', 'joblib'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -734,7 +734,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor', 'PyTorch'].map(skill => (
+                  {['Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -789,19 +789,27 @@ const Home = () => {
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Awarded Merit-1 and Merit-2 Scholarships totaling <span style={{ color: '#3b82f6', fontWeight: '600' }}>₹8.8L+</span> for academic excellence, ranking in the top 10% of the Computer Engineering department.</span>
+                <span>Awarded Merit-1 and Merit-2 Scholarships totaling <span style={{ color: '#3b82f6', fontWeight: '600' }}>₹8.8L+</span> for ranking among the top 10% of the Computer Engineering department.</span>
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Coordinator of the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Visual and Signal Information Processing (VSIP)</span> Group at Thapar Institute of Engineering and Technology.</span>
+                <span>Coordinator of the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Visual and Signal Information Processing (VSIP)</span> Group at TIET.</span>
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Solved <span style={{ color: '#3b82f6', fontWeight: '600' }}>290+</span> LeetCode problems with more than <span style={{ color: '#3b82f6', fontWeight: '600' }}>600</span> submissions while maintaining over <span style={{ color: '#3b82f6', fontWeight: '600' }}>200</span> active coding days.</span>
+                <span>Solved <span style={{ color: '#3b82f6', fontWeight: '600' }}>290+</span> LeetCode problems with more than <span style={{ color: '#3b82f6', fontWeight: '600' }}>600</span> submissions and over <span style={{ color: '#3b82f6', fontWeight: '600' }}>200</span> active coding days.</span>
               </li>
-              <li className="flex items-start p-3 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)' }}>
+              <li className="flex items-start py-1.5">
                 <span className="mr-2 font-bold text-sm" style={{ color: '#7dd3fc' }}>•</span>
-                <span>Completed Andrew Ng's Machine Learning Specialization on Coursera: Supervised Machine Learning, Advanced Learning Algorithms, and Unsupervised Learning, Recommenders and Reinforcement Learning.</span>
+                <span>Completed Andrew Ng's Machine Learning Specialization (Coursera), including:</span>
+              </li>
+              <li className="flex items-start py-1.5" style={{ paddingLeft: '1.5rem' }}>
+                <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
+                <span>Supervised Machine Learning: Regression and Classification</span>
+              </li>
+              <li className="flex items-start py-1.5" style={{ paddingLeft: '1.5rem' }}>
+                <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
+                <span>Unsupervised Learning, Recommenders and Reinforcement Learning</span>
               </li>
             </ul>
           </motion.div>

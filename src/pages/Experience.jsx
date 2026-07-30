@@ -111,11 +111,11 @@ const Experience = () => {
               <ul className="space-y-3 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', paddingLeft: '1.25rem' }}>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Developed an AI-generated counselor avatar pipeline using LivePortrait and MuseTalk with realistic lip-synced facial animation.
+                  Developed an emotion-aware voice cloning pipeline using CosyVoice for instruction-driven emotional speech synthesis.
                 </li>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Architected a FastAPI backend with WebSocket-based real-time video/audio streaming and a four-state session manager coordinating ASR, NLU and avatar generation.
+                  Built an instruction generation pipeline supporting six emotion-control prompts while preserving speaker identity.
                 </li>
               </ul>
             </div>
@@ -123,12 +123,12 @@ const Experience = () => {
             <div>
               <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Technologies</h3>
               <div className="flex flex-wrap" style={{ gap: 'var(--tag-gap)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>FastAPI</span>
                 <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Python</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>WebSockets</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>LivePortrait</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>MuseTalk</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Computer Vision</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>CosyVoice</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Speech AI</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Voice Cloning</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>LLMs</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Prompt Engineering</span>
                 <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>AI Systems</span>
               </div>
             </div>
@@ -159,7 +159,7 @@ const Experience = () => {
             {/* Header Section with Role and Certificate */}
             <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-4)', gap: 'var(--space-4)' }}>
               <div className="flex-1">
-                <h2 className="text-lg" style={{ color: '#f1f5f9', fontWeight: '600', letterSpacing: '0.005em' }}>Intern (AI Systems)</h2>
+                <h2 className="text-lg" style={{ color: '#f1f5f9', fontWeight: '600', letterSpacing: '0.005em' }}>Software Engineering Intern (AI Systems)</h2>
               </div>
               <div className="flex items-center flex-shrink-0" style={{ gap: 'var(--space-2)' }}>
                 <a
@@ -228,19 +228,11 @@ const Experience = () => {
               <ul className="space-y-3 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', paddingLeft: '1.25rem' }}>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Designed the Weak Attention Preservation Block (WAP-Block), a lightweight Transformer attention module for image deraining.
+                  Designed and implemented a custom Transformer attention mechanism for image deraining, improving baseline performance by 2.3 dB and achieving 25.46 PSNR and 0.841 SSIM.
                 </li>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Improved baseline performance by 2.3 dB, achieving 25.46 PSNR and 0.841 SSIM.
-                </li>
-                <li className="relative" style={{ paddingLeft: '0.75rem' }}>
-                  <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Published the accepted paper, Weak Attention Preservation Block in Vision Transformer for Single Image De-raining, at NCVPRIG 2026.
-                </li>
-                <li className="relative" style={{ paddingLeft: '0.75rem' }}>
-                  <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Developed and benchmarked the model using PyTorch, Vision Transformers, Deep Learning, Computer Vision and Image Restoration workflows.
+                  Published the paper "Weak Attention Preservation Block in Vision Transformer for Single Image De-raining", accepted at NCVPRIG 2026.
                 </li>
               </ul>
             </div>
@@ -283,7 +275,7 @@ const Experience = () => {
             {/* Header Section with Role and Certificate */}
             <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-4)', gap: 'var(--space-4)' }}>
               <div className="flex-1">
-                <h2 className="text-lg" style={{ color: '#f1f5f9', fontWeight: '600', letterSpacing: '0.005em' }}>Summer Intern</h2>
+                <h2 className="text-lg" style={{ color: '#f1f5f9', fontWeight: '600', letterSpacing: '0.005em' }}>Software Engineering Intern</h2>
               </div>
               <a
                 href="https://drive.google.com/file/d/1ktksBAkSEqKrFvnP_MZCuhyVN65peWEV/view"
@@ -347,15 +339,11 @@ const Experience = () => {
               <ul className="space-y-3 text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', paddingLeft: '1.25rem' }}>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Investigated polarization-based image deraining using Stokes vectors and Mueller matrix formalism.
+                  Analyzed polarization effects on raindrop-induced image degradation using Stokes vector representations and Mueller matrix transformations.
                 </li>
                 <li className="relative" style={{ paddingLeft: '0.75rem' }}>
                   <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Concluded that polarization-aware learning requires multi-angle polarization-camera datasets.
-                </li>
-                <li className="relative" style={{ paddingLeft: '0.75rem' }}>
-                  <span className="absolute" style={{ left: '-0.25rem', top: '0.5em', width: '0.375rem', height: '0.375rem', backgroundColor: '#3b82f6', borderRadius: '50%' }}></span>
-                  Built research intuition across computer vision, deep learning and image processing pipelines.
+                  Conducted experiments with Transformer-based image deraining models to evaluate how polarization characteristics influence restoration quality under different training configurations.
                 </li>
               </ul>
             </div>

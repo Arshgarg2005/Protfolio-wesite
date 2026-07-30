@@ -167,15 +167,13 @@ const Research = () => {
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" style={{ stroke: '#7dd3fc' }}/>
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" style={{ stroke: '#7dd3fc' }}/>
                 </svg>
-                <h2 className="leading-tight flex-1" style={{ color: '#f8fafc', fontSize: '1.25rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>Accepted Paper</h2>
+                <h2 className="leading-tight flex-1" style={{ color: '#f8fafc', fontSize: '1.25rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>Weak Attention Preservation Block in Vision Transformer for Single Image De-raining</h2>
               </div>
             </div>
 
             {/* Description */}
             <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.7', fontWeight: '400', maxWidth: '42rem' }}>
-              <span style={{ fontWeight: '600', color: '#e2e8f0' }}>Weak Attention Preservation Block in Vision Transformer for Single Image De-raining</span>
-              <br />
-              Conference: NCVPRIG 2026
+              Accepted at NCVPRIG 2026.
             </p>
           </motion.div>
         </motion.div>

@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1,
       title: 'AI Ticket Automation Platform',
       status: 'Completed',
-      description: 'Architected an event-driven backend using Node.js, Inngest and MongoDB with JWT authentication and RBAC for asynchronous ticket classification, moderator assignment and multi-channel email notifications. Built a Qdrant-powered semantic retrieval pipeline using calibrated similarity thresholds (0.80 duplicate reuse and 0.76 RAG generation), reducing duplicate-response latency by 15.5 seconds through intelligent historical response reuse.',
+      description: 'Architected an event-driven ticket processing backend using Node.js, Inngest step functions and MongoDB with JWT-based authentication, automatic retries and parallel NLP inference. Developed a Qdrant-based semantic search system that routes tickets using calibrated similarity thresholds (80% duplicate reuse and 76% RAG generation), bypassing approximately 15.5 seconds of LLM latency for duplicate tickets. Engineered backend workflows for load-balanced moderator assignment and automated email notifications while surfacing previous ticket resolutions to accelerate support.',
       techStack: ['Node.js', 'MongoDB', 'JWT', 'Inngest', 'Qdrant', 'RAG', 'React'],
       links: [
         { label: 'GitHub', href: 'https://github.com/customer-support-automation/Customer_Support_-Automation' },
@@ -20,8 +20,8 @@ const Projects = () => {
       id: 2,
       title: 'Malicious PDF Detection',
       status: 'Completed',
-      description: 'Developed a Flask-based PDF malware detection backend integrating PyPDF2 feature extraction, Scikit-learn preprocessing pipelines and real-time inference. Optimized LightGBM, XGBoost and Random Forest models using feature engineering, SHAP analysis and five-fold cross-validation, achieving 99.45% accuracy and 0.9993 AUC.',
-      techStack: ['Flask', 'Python', 'LightGBM', 'XGBoost', 'Random Forest', 'SHAP', 'React'],
+      description: 'Developed an end-to-end PDF malware detection system integrating PDF processing, feature extraction and real-time malware prediction. Evaluated Random Forest, XGBoost and LightGBM models, selecting LightGBM after feature engineering and SHAP analysis, achieving 99.45% accuracy and 0.9993 AUC.',
+      techStack: ['Python', 'Flask', 'LightGBM', 'XGBoost', 'Random Forest', 'SHAP', 'Scikit-Learn', 'React'],
       links: [
         { label: 'GitHub', href: 'https://github.com/Kritika7078/PDF_Malware_Detection_ML' },
         { label: 'Live Demo', href: 'https://pdf-malware-detection-ml.vercel.app/' },
