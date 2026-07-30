@@ -220,7 +220,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>
+                <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', width: '100%', }}>
                   {project.description}
                 </p>
               </div>
