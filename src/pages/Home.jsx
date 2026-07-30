@@ -85,7 +85,7 @@ const Home = () => {
               <motion.div variants={itemVariants}>
                 <h1 className="text-2xl md:text-3xl lg:text-[2.5rem]" style={{ color: '#e2e8f0', lineHeight: '1.2', fontWeight: '700', letterSpacing: '-0.025em', marginBottom: 'var(--space-6)' }}>
                   Computer Engineering Undergraduate<br />
-                  Aspiring Software Engineer with ML Experience
+                  Aspiring Software Engineer
                 </h1>
               </motion.div>
               
@@ -94,7 +94,7 @@ const Home = () => {
                 className="text-base md:text-lg"
                 style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '400', maxWidth: '36rem', marginBottom: 'var(--space-10)' }}
               >
-                My work focuses on building scalable ML pipelines and Transformer-based deep learning models. I am actively seeking internship opportunities in software engineering roles.
+                Computer Engineering undergraduate passionate about Software Engineering, Artificial Intelligence, Machine Learning, Computer Vision and scalable backend systems. I enjoy building production-ready software, AI-powered applications and intelligent automation platforms while actively seeking Software Engineering internship opportunities.
               </motion.p>
 
               <motion.div
@@ -103,7 +103,7 @@ const Home = () => {
                 style={{ gap: 'var(--space-3)', marginBottom: 'var(--space-8)' }}
               >
                 <a
-                  href="https://drive.google.com/file/d/198x1gGHl7ydokUKvnoY1WoPoid9JGYU6/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1yC5RY6MO9wKDZN_lnxiKPK5hE1MiQ4Jr/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
@@ -121,7 +121,28 @@ const Home = () => {
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                 >
-                  Resume (PDF)
+                  Resume (SDE)
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1oepZpu_9LU0Z8ZkiEpAc4403D0I6OTFs/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-2.5 rounded-md font-medium text-sm transition-all"
+                  style={{
+                    background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                    color: '#ffffff',
+                    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(59, 130, 246, 0.3)';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.12)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  Resume (AI)
                 </a>
                 <Link
                   to="/projects"
@@ -255,13 +276,16 @@ const Home = () => {
             </div>
             <div className="space-y-5 text-sm" style={{ color: '#94a3b8', lineHeight: '1.85', fontWeight: '300', maxWidth: '42rem' }}>
               <p>
-                I am a Computer Engineering undergraduate with a strong foundation in full-stack development and applied machine learning. My work focuses on building scalable web systems and developing deep learning models for real-world computer vision problems.
+                I am a Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with a CGPA of 9.77 and strong interests in Software Engineering, Artificial Intelligence and scalable backend development.
               </p>
               <p>
-                I have research experience working with Vision Transformer architectures for image restoration, co-authoring a paper published at the CVPR 2025 Workshop. Through internships at IIT Bhubaneswar and IIT Jodhpur, I have gained hands-on experience designing and evaluating AI models at scale.
+                My work combines backend engineering, machine learning and computer vision research. I enjoy designing production-ready software systems, AI-powered automation platforms and intelligent applications that solve real-world problems.
               </p>
               <p>
-                I am currently seeking internship or early-career opportunities where I can contribute to impactful projects in software engineering, machine learning, or applied AI.
+                My experience includes software engineering internships at Codsai, IIT Bhubaneswar and IIT Jodhpur, where I worked on AI systems, transformer-based computer vision research and production-grade backend architectures.
+              </p>
+              <p>
+                I am currently seeking Software Engineering internships while continuing to build scalable software products and AI applications.
               </p>
             </div>
           </motion.div>
@@ -307,13 +331,13 @@ const Home = () => {
                 <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
               <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
-                End-to-end deep learning and machine learning pipelines, relational database systems, and full-stack web applications with a focus on scalability and clean architecture.
+                Event-driven backend systems, semantic retrieval pipelines and full-stack applications for AI-powered automation.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Machine Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Deep Learning</span>
-                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>SQL</span>
-                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>React</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Node.js</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>MongoDB</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>JWT</span>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Qdrant</span>
               </div>
             </Link>
           </motion.div>
@@ -350,9 +374,10 @@ const Home = () => {
                 <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
               <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
-                Research internships at premier institutions, working on Vision Transformer architectures and deep learning systems.
+                Software engineering and AI systems internships spanning counselor-avatar generation, image restoration research and production backend architecture.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
+                <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>Codsai</span>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>IIT Bhubaneswar</span>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>IIT Jodhpur</span>
               </div>
@@ -392,9 +417,9 @@ const Home = () => {
               </div>
               <div className="flex-1">
                 <div className="rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)', padding: 'var(--space-4)' }}>
-                  <h3 className="text-sm" style={{ color: '#e2e8f0', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>CVPR 2025 Workshop</h3>
+                    <h3 className="text-sm" style={{ color: '#e2e8f0', fontWeight: '600', marginBottom: 'var(--tag-gap)' }}>NTIRE 2025 Challenge</h3>
                   <p className="text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300' }}>
-                    Co-author of a paper published at the CVPR 2025 Workshop as part of the NTIRE Challenge on Day and Night Raindrop Removal. Contributed to the design and evaluation of Transformer-based image restoration models, achieving top-tier performance among international teams.
+                      Co-author of the CVPR 2025 Workshop publication for the NTIRE Challenge on Day and Night Raindrop Removal. Contributed to transformer-based image restoration methods evaluated against international research teams.
                   </p>
                 </div>
               </div>
@@ -433,7 +458,7 @@ const Home = () => {
                 <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.5) 0%, transparent 100%)' }} />
               </div>
               <p className="text-sm flex-1" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', marginBottom: 'var(--space-4)' }}>
-                Leadership roles in VSIP, contributing to coordination and technical initiatives.
+                Coordinator for VSIP, supporting technical events, workshops, student mentoring and collaborative research activities.
               </p>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
                 <span className="px-3 py-1.5 text-xs rounded-md font-medium" style={{ backgroundColor: 'rgba(59, 130, 246, 0.08)', color: '#7dd3fc', border: '1px solid rgba(59, 130, 246, 0.15)', letterSpacing: '0.01em' }}>VSIP</span>
@@ -529,7 +554,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    Frontend
+                    Frameworks & Tools
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -537,7 +562,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['React', 'Tailwind CSS'].map(skill => (
+                  {['PyTorch', 'Node.js', 'React', 'Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -572,7 +597,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    Backend & DB
+                    Concepts
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -580,7 +605,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['Node.js', 'MySQL'].map(skill => (
+                  {['Data Structures and Algorithms', 'Object-Oriented Programming', 'Operating Systems', 'Database Management Systems', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'Conversational AI'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -615,7 +640,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    ML & DL
+                    Libraries
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -623,7 +648,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['Machine Learning', 'Deep Learning', 'Transformers', 'Image Restoration'].map(skill => (
+                  {['NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'NLTK', 'OpenCV', 'joblib'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -658,7 +683,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    Libraries
+                    Core Areas
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -666,7 +691,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['NumPy', 'Pandas', 'OpenCV', 'Matplotlib', 'Tensorflow'].map(skill => (
+                  {['Software Engineering', 'Artificial Intelligence', 'Machine Learning', 'Computer Vision', 'Scalable Backend Development'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -701,7 +726,7 @@ const Home = () => {
                     color: '#7dd3fc', 
                     letterSpacing: '0.08em',
                   }}>
-                    Tools
+                    Development Tools
                   </h3>
                   <div className="h-px mt-2" style={{ 
                     background: 'linear-gradient(90deg, rgba(59, 130, 246, 0.4) 0%, transparent 100%)',
@@ -709,7 +734,7 @@ const Home = () => {
                   }} />
                 </div>
                 <div className="flex flex-wrap flex-1" style={{ gap: 'var(--space-2)', alignContent: 'flex-start' }}>
-                  {['Git/GitHub', 'Linux', 'Google Colab', 'Anaconda', 'VS Code', 'MATLAB', 'RStudio'].map(skill => (
+                  {['Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor', 'PyTorch'].map(skill => (
                     <span 
                       key={skill} 
                       className="text-xs rounded-md transition-all duration-200 hover:scale-105 cursor-default whitespace-nowrap"
@@ -760,24 +785,23 @@ const Home = () => {
             <ul className="space-y-2 text-sm" style={{ color: '#94a3b8', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Selected among the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Top 32</span> teams out of <span style={{ color: '#3b82f6', fontWeight: '600' }}>361+</span> participants in the <span style={{ color: '#3b82f6', fontWeight: '600' }}>CVPR NTIRE 2025</span> Challenge.</span>
+                <span>Selected among the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Top 32</span> teams worldwide in the <span style={{ color: '#3b82f6', fontWeight: '600' }}>CVPR NTIRE 2025</span> Challenge from over <span style={{ color: '#3b82f6', fontWeight: '600' }}>361</span> participating teams.</span>
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Co-author of a paper published at the <span style={{ color: '#3b82f6', fontWeight: '600' }}>CVPR 2025 Workshop</span>.</span>
+                <span>Awarded Merit-1 and Merit-2 Scholarships totaling <span style={{ color: '#3b82f6', fontWeight: '600' }}>₹8.8L+</span> for academic excellence, ranking in the top 10% of the Computer Engineering department.</span>
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Recognized as a National Semi-Finalist in <span style={{ color: '#3b82f6', fontWeight: '600' }}>Flipkart GRiD 4.0</span> (2025).</span>
+                <span>Coordinator of the <span style={{ color: '#3b82f6', fontWeight: '600' }}>Visual and Signal Information Processing (VSIP)</span> Group at Thapar Institute of Engineering and Technology.</span>
               </li>
               <li className="flex items-start py-1.5">
                 <span className="mr-2 text-sm" style={{ color: '#3b82f6' }}>•</span>
-                <span>Awarded merit-based scholarship at Thapar Institute of Engineering and Technology for academic excellence.</span>
+                <span>Solved <span style={{ color: '#3b82f6', fontWeight: '600' }}>290+</span> LeetCode problems with more than <span style={{ color: '#3b82f6', fontWeight: '600' }}>600</span> submissions while maintaining over <span style={{ color: '#3b82f6', fontWeight: '600' }}>200</span> active coding days.</span>
               </li>
               <li className="flex items-start p-3 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.03)' }}>
                 <span className="mr-2 font-bold text-sm" style={{ color: '#7dd3fc' }}>•</span>
-
-                <span>Formally recognized for technical contributions to Visual and Signal Information Processing (VSIP) initiatives.</span>
+                <span>Completed Andrew Ng's Machine Learning Specialization on Coursera: Supervised Machine Learning, Advanced Learning Algorithms, and Unsupervised Learning, Recommenders and Reinforcement Learning.</span>
               </li>
             </ul>
           </motion.div>

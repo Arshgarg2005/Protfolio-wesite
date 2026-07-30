@@ -7,44 +7,25 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Agentic AI Driven Automated Customer Support System',
-      status: 'Ongoing',
-      description: 'An agentic AI-based customer support system in which autonomous agents perform intent analysis, decision-making, and workflow execution to resolve user queries. Designed to automate multi-step support actions while minimizing response latency and manual intervention.',
-      techStack: ['Python', 'OpenAI API (LLMs)', 'Machine Learning', 'Agentic AI Architecture'],
-      link: 'https://github.com/Arshgarg2005/Automated_Customer_Support',
-      linkText: 'GitHub →'
+      title: 'AI Ticket Automation Platform',
+      status: 'Completed',
+      description: 'Architected an event-driven backend using Node.js, Inngest and MongoDB with JWT authentication and RBAC for asynchronous ticket classification, moderator assignment and multi-channel email notifications. Built a Qdrant-powered semantic retrieval pipeline using calibrated similarity thresholds (0.80 duplicate reuse and 0.76 RAG generation), reducing duplicate-response latency by 15.5 seconds through intelligent historical response reuse.',
+      techStack: ['Node.js', 'MongoDB', 'JWT', 'Inngest', 'Qdrant', 'RAG', 'React'],
+      links: [
+        { label: 'GitHub', href: 'https://github.com/customer-support-automation/Customer_Support_-Automation' },
+        { label: 'Live Demo', href: 'https://customer-support-automation-six.vercel.app/' },
+      ],
     },
     {
       id: 2,
-      title: 'Malicious PDF Detector',
+      title: 'Malicious PDF Detection',
       status: 'Completed',
-      description: 'Built an end-to-end machine learning pipeline to detect malicious PDF files using structural features. Applied LDA for dimensionality reduction and trained a Random Forest classifier, achieving 92% accuracy and a 0.93 F1-score on benchmark datasets. Developed a web interface for real-time PDF classification.',
-      techStack: ['Machine Learning', 'LDA', 'Random Forest', 'Python'],
-      link: 'https://github.com/Arshgarg2005/Malacious_PDF_Detector',
-      linkText: 'GitHub →',
-      results: [
-        '• Accuracy: 92%',
-        '• F1-Score: 0.93',
-        '• ROC AUC: 0.96'
+      description: 'Developed a Flask-based PDF malware detection backend integrating PyPDF2 feature extraction, Scikit-learn preprocessing pipelines and real-time inference. Optimized LightGBM, XGBoost and Random Forest models using feature engineering, SHAP analysis and five-fold cross-validation, achieving 99.45% accuracy and 0.9993 AUC.',
+      techStack: ['Flask', 'Python', 'LightGBM', 'XGBoost', 'Random Forest', 'SHAP', 'React'],
+      links: [
+        { label: 'GitHub', href: 'https://github.com/Kritika7078/PDF_Malware_Detection_ML' },
+        { label: 'Live Demo', href: 'https://pdf-malware-detection-ml.vercel.app/' },
       ]
-    },
-    {
-      id: 3,
-      title: 'Election Voting System',
-      status: 'Completed',
-      description: 'Designed and implemented a secure, database-backed voting system using SQL. Ensured data integrity for voters, candidates, and election results through efficient schema design and optimized queries.',
-      techStack: ['SQL', 'Database Design', 'Query Optimization'],
-      link: 'https://github.com/Arshgarg2005/Election_voting_system',
-      linkText: 'GitHub →'
-    },
-    {
-      id: 4,
-      title: 'Food App',
-      status: 'Completed',
-      description: 'Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend for scalable performance.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Full-Stack'],
-      link: 'https://arshgarg-foodapp.vercel.app/',
-      linkText: 'Live Demo →'
     }
   ];
 
@@ -198,34 +179,43 @@ const Projects = () => {
                         />
                       </div>
                     </div>
-                    <a 
-                      href={project.link}
-                      className="transition-all text-xs font-medium flex items-center"
-                      style={{ color: '#7dd3fc', gap: '0.25rem', textDecoration: 'none' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#38bdf8';
-                        e.currentTarget.style.transform = 'translateX(2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#7dd3fc';
-                        e.currentTarget.style.transform = 'translateX(0)';
-                      }}
-                    >
-                      {project.linkText.includes('GitHub') ? (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                      ) : (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                          <polyline points="15 3 21 3 21 9"/>
-                          <line x1="10" y1="14" x2="21" y2="3"/>
-                        </svg>
-                      )}
-                      {project.linkText.replace(' →', '')}
-                    </a>
+                    <div className="flex items-center flex-wrap" style={{ gap: 'var(--space-2)' }}>
+                      {project.links.map((link) => (
+                        <a 
+                          key={link.label}
+                          href={link.href}
+                          className="transition-all text-xs font-medium flex items-center px-3 py-1.5 rounded-md"
+                          style={{ color: '#7dd3fc', gap: '0.35rem', textDecoration: 'none', backgroundColor: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(125, 211, 252, 0.18)' }}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.color = '#38bdf8';
+                            e.currentTarget.style.transform = 'translateX(2px)';
+                            e.currentTarget.style.borderColor = 'rgba(125, 211, 252, 0.32)';
+                            e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.07)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.color = '#7dd3fc';
+                            e.currentTarget.style.transform = 'translateX(0)';
+                            e.currentTarget.style.borderColor = 'rgba(125, 211, 252, 0.18)';
+                            e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.04)';
+                          }}
+                        >
+                          {link.label === 'GitHub' ? (
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                          ) : (
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                              <polyline points="15 3 21 3 21 9"/>
+                              <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                          )}
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.8', fontWeight: '300', maxWidth: '42rem' }}>

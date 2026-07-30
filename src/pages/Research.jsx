@@ -132,14 +132,14 @@ const Research = () => {
                 <div>
                   <p className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-2)' }}>Achievement</p>
                   <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.6', fontWeight: '400' }}>
-                    Selected as <span style={{ fontWeight: '600', color: '#f8fafc' }}>Top 32 team</span> out of <span style={{ fontWeight: '600', color: '#f8fafc' }}>361+ participants</span>. Achieved state-of-the-art results on the Raindrop Clarity dataset.
+                    Selected among the <span style={{ fontWeight: '600', color: '#f8fafc' }}>Top 32 teams worldwide</span> out of <span style={{ fontWeight: '600', color: '#f8fafc' }}>361 participating teams</span>.
                   </p>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* VSIP Recognition */}
+          {/* Accepted Paper */}
           <motion.div
             variants={itemVariants}
             className="rounded-xl backdrop-blur-md transition-all duration-300"
@@ -162,38 +162,20 @@ const Research = () => {
           >
             {/* Header */}
             <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-4)', gap: 'var(--space-4)' }}>
-              <h2 className="leading-tight flex-1" style={{ color: '#f8fafc', fontSize: '1.25rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>VSIP Team Recognition</h2>
-              <a
-                href="https://drive.google.com/file/d/1t5l-jrJvaBEO1-B9tc28fzZg9tLuAzLv/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center px-3 py-1.5 text-xs rounded-md font-semibold transition-all flex-shrink-0"
-                style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#7dd3fc', textDecoration: 'none', border: '1px solid rgba(59, 130, 246, 0.3)', gap: '0.375rem', letterSpacing: '0.02em' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgba(59, 130, 246, 0.2)';
-                  e.currentTarget.style.color = '#93c5fd';
-                  e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgba(59, 130, 246, 0.15)';
-                  e.currentTarget.style.color = '#7dd3fc';
-                  e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.3)';
-                }}
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14,2 14,8 20,8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10,9 9,9 8,9"/>
+              <div className="flex items-center" style={{ gap: 'var(--space-2)' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" style={{ stroke: '#7dd3fc' }}/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" style={{ stroke: '#7dd3fc' }}/>
                 </svg>
-                CERTIFICATE
-              </a>
+                <h2 className="leading-tight flex-1" style={{ color: '#f8fafc', fontSize: '1.25rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>Accepted Paper</h2>
+              </div>
             </div>
 
             {/* Description */}
             <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.7', fontWeight: '400', maxWidth: '42rem' }}>
-              Formally recognized as a valued member for innovative contribution to the project <span style={{ fontWeight: '600', color: '#e2e8f0' }}>“Designing of the Generalizable Vision Transformers”</span> with officially commended technical acumen.
+              <span style={{ fontWeight: '600', color: '#e2e8f0' }}>Weak Attention Preservation Block in Vision Transformer for Single Image De-raining</span>
+              <br />
+              Conference: NCVPRIG 2026
             </p>
           </motion.div>
         </motion.div>

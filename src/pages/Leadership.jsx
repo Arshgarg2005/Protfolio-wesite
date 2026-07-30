@@ -75,7 +75,7 @@ const Leadership = () => {
             {/* Role Section */}
             <div style={{ marginBottom: 'var(--space-5)', paddingBottom: 'var(--space-5)', borderBottom: '1px solid rgba(255, 255, 255, 0.06)' }}>
               <div className="flex items-start justify-between" style={{ marginBottom: 'var(--space-3)', gap: 'var(--space-4)' }}>
-                <h2 className="leading-tight" style={{ color: '#f8fafc', fontSize: '1.5rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>VSIP Coordinator</h2>
+                <h2 className="leading-tight" style={{ color: '#f8fafc', fontSize: '1.5rem', letterSpacing: '0.005em', fontWeight: '600', lineHeight: '1.3' }}>Coordinator</h2>
                 <div className="flex items-center px-3 py-1.5 rounded-md flex-shrink-0" style={{ backgroundColor: 'rgba(16, 185, 129, 0.15)', border: '1px solid rgba(16, 185, 129, 0.35)', gap: '0.5rem' }}>
                   <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#34d399', boxShadow: '0 0 6px rgba(52, 211, 153, 0.5)' }}></div>
                   <span className="text-xs font-semibold uppercase" style={{ color: '#34d399', letterSpacing: '0.05em' }}>Active</span>
@@ -83,7 +83,7 @@ const Leadership = () => {
               </div>
 
               <p className="text-sm" style={{ color: '#cbd5e1', lineHeight: '1.7', fontWeight: '400', maxWidth: '42rem' }}>
-                Coordinated project activities and contributed to the VSIP (Visual and Signal Information Processing) group, focusing on Vision Transformer-based research and computer vision systems.
+                Coordinate technical events, organize workshops, mentor students and support collaborative research activities in Computer Vision, Machine Learning and Artificial Intelligence.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const Leadership = () => {
               <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Recognition</h3>
               <div className="rounded-lg" style={{ backgroundColor: 'rgba(125, 211, 252, 0.04)', border: '1px solid rgba(125, 211, 252, 0.15)', padding: 'var(--space-4)', borderLeft: '3px solid #7dd3fc' }}>
                 <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.6', fontWeight: '400' }}>
-                  Formally recognized for <span style={{ fontWeight: '600', color: '#f8fafc' }}>innovative technical contributions</span> and <span style={{ fontWeight: '600', color: '#f8fafc' }}>effective project coordination</span> in advancing Vision Transformer research.
+                  Coordinate technical events, organize workshops, mentor students and support collaborative research activities in Computer Vision, Machine Learning and Artificial Intelligence.
                 </p>
               </div>
             </div>
@@ -101,9 +101,10 @@ const Leadership = () => {
             <div style={{ marginBottom: 'var(--space-6)' }}>
               <h3 className="text-xs uppercase" style={{ color: '#7dd3fc', fontWeight: '600', letterSpacing: '0.08em', marginBottom: 'var(--space-3)' }}>Areas of Focus</h3>
               <div className="flex flex-wrap" style={{ gap: 'calc(var(--tag-gap) + 2px)' }}>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Project Coordination</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Vision Transformers</span>
-                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Research</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Technical Events</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Workshops</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Mentorship</span>
+                <span className="px-3 py-1.5 text-xs rounded-lg font-semibold" style={{ backgroundColor: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd', border: '1px solid rgba(59, 130, 246, 0.3)', letterSpacing: '0.01em' }}>Collaborative Research</span>
               </div>
             </div>
 
@@ -114,13 +115,13 @@ const Leadership = () => {
                 <div className="flex items-start" style={{ gap: 'var(--space-3)' }}>
                   <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#7dd3fc', marginTop: '0.5rem', flexShrink: 0 }}></div>
                   <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.7', fontWeight: '400', flex: 1 }}>
-                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Bridged academic research with practical implementation</span> through coordination, mentorship, and technical collaboration.
+                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Supported technical events and workshops</span> while mentoring students and coordinating research activities.
                   </p>
                 </div>
                 <div className="flex items-start" style={{ gap: 'var(--space-3)' }}>
                   <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#7dd3fc', marginTop: '0.5rem', flexShrink: 0 }}></div>
                   <p className="text-sm" style={{ color: '#e2e8f0', lineHeight: '1.7', fontWeight: '400', flex: 1 }}>
-                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Advanced Vision Transformer-based research</span> while supporting peer learning and project execution.
+                    <span style={{ fontWeight: '600', color: '#f8fafc' }}>Encouraged collaborative research in Computer Vision, Machine Learning and Artificial Intelligence</span> through active coordination.
                   </p>
                 </div>
               </div>
