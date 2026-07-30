@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1,
       title: 'AI Ticket Automation Platform',
       status: 'Completed',
-      description: 'Architected an event-driven ticket processing backend using Node.js, Inngest step functions and MongoDB with JWT-based authentication, automatic retries and parallel NLP inference. Developed a Qdrant-based semantic search system that routes tickets using calibrated similarity thresholds (80% duplicate reuse and 76% RAG generation), bypassing approximately 15.5 seconds of LLM latency for duplicate tickets. Engineered backend workflows for load-balanced moderator assignment and automated email notifications while surfacing previous ticket resolutions to accelerate support.',
+      description: 'Architected an event-driven ticket processing pipeline using Inngest step functions with JWT-based authentication,automatic retries, failure isolation, and parallel NLP inference for classification, with results persisted to MongoDB. Developed a Qdrant-based semantic search system that routes tickets using calibrated similarity thresholds (80% duplicate reuse and 76% RAG generation), bypassing approximately 15.5 seconds of LLM latency for duplicate tickets. Engineered backend workflows for load-balanced moderator assignment and automated email notifications while surfacing previous ticket resolutions to accelerate support.',
       techStack: ['Node.js', 'MongoDB', 'JWT', 'Inngest', 'Qdrant', 'RAG', 'React'],
       links: [
         { label: 'GitHub', href: 'https://github.com/customer-support-automation/Customer_Support_-Automation' },
@@ -20,7 +20,7 @@ const Projects = () => {
       id: 2,
       title: 'Malicious PDF Detection',
       status: 'Completed',
-      description: 'Developed an end-to-end PDF malware detection system integrating PDF processing, feature extraction and real-time malware prediction. Evaluated Random Forest, XGBoost and LightGBM models, selecting LightGBM after feature engineering and SHAP analysis, achieving 99.45% accuracy and 0.9993 AUC.',
+      description: 'Developed an end-to-end PDF malware detection system integrating PDF processing, feature extraction and real-time malware prediction. Evaluated Random Forest, XGBoost, and LightGBM models for PDF malware detection, selecting LightGBM(99.45% accuracy, 0.9993 AUC) and using SHAP to identify key structural PDF features.',
       techStack: ['Python', 'Flask', 'LightGBM', 'XGBoost', 'Random Forest', 'SHAP', 'Scikit-Learn', 'React'],
       links: [
         { label: 'GitHub', href: 'https://github.com/Kritika7078/PDF_Malware_Detection_ML' },
